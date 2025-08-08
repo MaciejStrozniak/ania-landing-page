@@ -173,6 +173,7 @@ p {
     border: 2px solid rgba(255, 255, 255, 0.3);
     max-width: 35%;
     padding-left: 2%;
+    padding-right: 2%;
     margin-left: 13%;
 }
 
@@ -357,6 +358,34 @@ footer a:hover {
     /* Margines od góry dla main w wersji mobilnej powinien być 0, jak wcześniej */
     main {
         margin-top: 0;
+    }
+
+    .helloo-section {
+        /* background-image: url('weterynarz-gad-poznan-wielkopolska.jpg'); */
+        background-color: #333;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .helloo-section .text-overlay {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #333;
+        border: #229954 solid 2px;
+        /* padding: 10px; */
+        /* border-radius: 10px; */
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        max-width: 90%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 0;
     }
 
     /* Zmiana układu na jedną kolumnę */
