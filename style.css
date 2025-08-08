@@ -151,7 +151,8 @@ p {
 /* NOWE CLASSY I STYLE I WSZYSTKO NOWE */
 
 .helloo-section {
-    background-image: url('weterynarz-gad-poznan-wielkopolska.jpg');
+    /* background-image: url('weterynarz-gad-poznan-wielkopolska.jpg'); */
+    background-color: #333;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,7 +230,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    align-items: center;
+    /* align-items: center; */
+    align-items: left;
     /* padding-right: 40%; */
 }
 
@@ -358,6 +360,18 @@ footer a:hover {
     }
 
     /* Zmiana układu na jedną kolumnę */
+    .gekon-section {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
     .content-columns {
         flex-direction: column;
         gap: 0;
