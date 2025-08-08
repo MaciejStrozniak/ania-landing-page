@@ -161,7 +161,7 @@ p {
     /* background-image: url('/images/weterynarz-gad-poznan-wielkopolska.jpg'); */
     /* background-image: url('/images/reptiles-0FwHPK.jpg'); */
     /* background-image: url('/images/serious-geko-1179942-flipped.jpg'); */
-    background-image: url('/images/main-pic.jpg');
+    background-image: url('images/main-pic.jpg');
     background-color: #333;
     background-size: cover;
     /* background-position: center; */
@@ -392,7 +392,7 @@ footer a:hover {
     }
 
     .helloo-section {
-        background-image: url('/images/main-pic.jpg');
+        background-image: url('images/main-pic.jpg');
         background-color: #333;
         background-size: cover;
         background-position: center;
