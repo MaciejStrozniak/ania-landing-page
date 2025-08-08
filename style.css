@@ -208,6 +208,11 @@ p {
     padding-right: 3%;
 }
 
+.where-section {
+    display: flex;
+    justify-content: center;
+}
+
 .mruczek-section {
     /* border: solid 2px red; */
     display: flex;
@@ -421,6 +426,10 @@ footer a:hover {
         gap: 0;
         margin-bottom: 0;
         text-align: left;
+    }
+
+    .where-section {
+        justify-content: left;
     }
 
     .mruczek-column {
