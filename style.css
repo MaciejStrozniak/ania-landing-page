@@ -113,6 +113,32 @@ p {
     color: var(--szary-tekst);
 }
 
+a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: var(--szmaragdowa-zielen);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: var(--ciemna-zielen);
+    border-bottom: 1px solid var(--ciemna-zielen);
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 2px solid var(--szmaragdowa-zielen);
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+a:active {
+    color: var(--ciemna-zielen);
+    transform: translateY(1px);
+}
+
 /* Ukrycie wizualne nagłówków dla dostępności */
 .visually-hidden {
     position: absolute;
