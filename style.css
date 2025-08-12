@@ -1,10 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -16,11 +13,11 @@ body {
     /* font-family: "Roboto", sans-serif; */
     /* font-family: "M PLUS Rounded 1c", sans-serif; */
     /* font-family: "Inter", sans-serif; */
-    /* font-family: "Poppins", sans-serif; */
-    /* font-family: "Nunito", sans-serif; */
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
+    font-variation-settings: "wdth" 100;
     line-height: 1.6;
     color: #333;
     background-color: var(--neutralne-tlo);
@@ -70,6 +67,14 @@ main {
 /* Usunięto margines od góry dla main, ponieważ odstęp tworzy teraz .top-spacing-bar */
 main {
     margin-top: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--szmaragdowa-zielen);
+    margin: 30px auto;
+    max-width: 100%;
 }
 
 /* Nagłówki */
@@ -149,6 +154,20 @@ a:active {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.section-divider {
+    /* Solid border */
+
+    border-top: 1.5px solid #bbb;
+    border-color: var(--szmaragdowa-zielen);
+    margin-top: 65px;
+}
+
+  .section-divider-bottom{
+    border-top: 1.5px solid #bbb;
+    border-color: var(--szmaragdowa-zielen);
+    margin-top: 65px;
 }
 
 /* Sekcja hero (nagłówkowa) */
@@ -258,6 +277,44 @@ a:active {
     /* padding: 2%; */
 }
 
+.mruczek-personel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    /* border: #229954 solid 2px; */
+}
+
+.mruczek-personel {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: baseline; */
+    align-items: left;
+    line-height: 0.03px;
+
+    /* border: #229954 solid 2px; */
+
+}
+
+.mruczek-personel h2 {
+    margin: 0;
+    margin-top: 10%;
+    /* margin-right: 30px; */
+}
+
+.mruczek-personel p {
+    font-style: italic;
+    /* margin-bottom: 10%; */
+}
+
+.mruczek-personel-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
 .social-links {
     /* border: solid 2px red; */
     width: 100%;
@@ -271,6 +328,7 @@ a:active {
 .contact-section {
     display: flex;
     flex-direction: row;
+    margin-top: 0;
     /* padding-right: 40%; */
 }
 
@@ -282,6 +340,8 @@ a:active {
     /* align-items: center; */
     align-items: left;
     /* padding-right: 40%; */
+    margin-top: 0;
+
 }
 
 /* KONIEC - NOWE CLASSY I STYLE I WSZYSTKO NOWE - KONIEC*/
@@ -417,6 +477,14 @@ footer a:hover {
         margin-top: 0;
     }
 
+    .section-divider {
+        margin-top: 50px;
+    }
+
+    .section-divider-bottom{
+        margin-top: 60px;
+    }
+
     .helloo-section {
         background-image: url('images/main-pic.jpg');
         background-color: #333;
@@ -464,6 +532,27 @@ footer a:hover {
         text-align: left;
     }
 
+    .mruczek-personel-section {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        align-items: left;
+        margin-left: 0;
+        padding-left: 0;
+        /* border: #229954 solid 2px; */
+    }
+
+    .mruczek-personel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: baseline; */
+        align-items: left;
+        line-height: 0.03px;
+    
+        /* border: #229954 solid 2px; */
+    
+    }
+
     .contact-section {
         flex-direction: column;
         gap: 0;
@@ -480,11 +569,11 @@ footer a:hover {
     }
 
     /* Ustawienie kolejności elementów na mobile */
-    .contact-location-column {
+    /* .contact-location-column {
         order: 1;
-        border-bottom: 2px solid var(--szmaragdowa-zielen);
+        border-bottom: 1px solid var(--szmaragdowa-zielen);
         margin-bottom: 30px;
-    }
+    } */
 
     .specialist-column {
         order: 2;
