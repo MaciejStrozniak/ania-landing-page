@@ -72,7 +72,8 @@ main {
 hr {
     border: none;
     height: 1px;
-    background-color: var(--szmaragdowa-zielen);
+    /* background-color: var(--szmaragdowa-zielen); */
+    background-color: var(--ciemna-zielen);
     margin: 30px auto;
     max-width: 100%;
 }
@@ -142,6 +143,10 @@ a:focus {
 a:active {
     color: var(--ciemna-zielen);
     transform: translateY(1px);
+}
+
+b, strong {
+    font-weight: 800; /* możesz zmienić na 800, jeśli 900 jest za mocne */
 }
 
 /* Ukrycie wizualne nagłówków dla dostępności */
@@ -239,6 +244,12 @@ a:active {
     color: var(--ania-green);
 }
 
+.text-overlay h1 {
+    /* color: var(--jasny-szary); */
+    font-size: 3em;
+    color: var(--ania-green);
+}
+
 .hello-section {
     /* background-image: url('/images/weterynarz-gad-poznan-wielkopolska.jpg'); */
 }
@@ -251,6 +262,24 @@ a:active {
 
 .gekon-column {
     padding-right: 3%;
+}
+
+.gekon-column ul {
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+.gekon-column li {
+    list-style-type: none;
+}
+
+.padding-li {
+    padding-bottom: 10px;    
 }
 
 .where-section {
