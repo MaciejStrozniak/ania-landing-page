@@ -73,7 +73,7 @@ hr {
     border: none;
     height: 1px;
     /* background-color: var(--szmaragdowa-zielen); */
-    background-color: var(--ciemna-zielen);
+    background-color: var(--szmaragdowa-zielen);
     margin: 30px auto;
     max-width: 100%;
 }
