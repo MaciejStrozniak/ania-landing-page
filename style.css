@@ -31,7 +31,8 @@ body {
 
 /* Kolory */
 :root {
-    --szmaragdowa-zielen: #27AE60;
+    /* --szmaragdowa-zielen: #27AE60; */
+    --szmaragdowa-zielen: #0b8684;
     --ciemna-zielen: #229954;
     --bialy: #FFFFFF;
     --szary-tekst: #555;
@@ -86,7 +87,8 @@ h2 {
 
 h3 {
     font-size: 2em;
-    color: var(--szary-tekst);
+    /* color: var(--szary-tekst); */
+    color: var(--szmaragdowa-zielen);
 }
 
 h4 {
@@ -105,14 +107,16 @@ p {
 a {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    color: var(--szmaragdowa-zielen);
+    /* color: var(--szmaragdowa-zielen); */
+    color: var(--szary-tekst);
     text-decoration: none;
     transition: all 0.3s ease;
     border-bottom: 1px solid transparent;
 }
 
 a:hover {
-    color: var(--ciemna-zielen);
+    /* color: var(--ciemna-zielen); */
+    color: var(--szmaragdowa-zielen);
     border-bottom: 1px solid var(--ciemna-zielen);
     text-decoration: none;
 }
@@ -191,7 +195,8 @@ b, strong {
 /* NOWE CLASSY I STYLE I WSZYSTKO NOWE */
 
 .helloo-section {
-    background-image: url('images/main-pic.jpg');
+    /* background-image: url('images/main-pic.jpg'); */
+    background-image: url('images/anna-piwońska-weterynarz-gekon-poznań-wielkopolska-gady.png');
     background-color: #333;
     background-size: cover;
     background-position: center 20%;
@@ -219,7 +224,6 @@ b, strong {
 
 .helloo-text {
     margin-top: 6px;
-
     color: var(--ania-green);
 }
 
@@ -489,10 +493,13 @@ iframe {
     }
 
     .helloo-section {
-        background-image: url('images/main-pic.jpg');
-        background-color: #333;
+        /* background-image: url('images/main-pic.jpg'); */
+        background-image: url('images/anna-piwońska-weterynarz-gekon-poznań-wielkopolska-gady.png');
+        /* background-color: #333; */
+        /* background-image: none; */
+        background-color: var(--szmaragdowa-zielen);
         background-size: cover;
-        background-position: center;
+        background-position: -450px center;
         background-repeat: no-repeat;
         position: relative;
         min-height: 100vh;
@@ -507,6 +514,13 @@ iframe {
         padding-left: 2%;
         padding-right: 2%;
         margin-left: 0;
+    }
+
+    .hello-text-background {
+        /* background-color: #229954; */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* border: 2px solid red; */
+        padding: 10px;
     }
 
     /* Zmiana układu na jedną kolumnę */
