@@ -459,9 +459,15 @@ iframe {
 }
 
 /* Responsywność */
-@media (max-width: 768px) {
+/* Duże tablety */
+@media (max-width: 1024px) {
+    .helloo-section {
+        background-position: center;
+    }
+}
 
-/* NOWE CLASSY I STYLE I WSZYSTKO NOWE */
+/* Tablety */
+@media (max-width: 768px) {
 
     body {
         padding-top: 0;
@@ -499,7 +505,8 @@ iframe {
         /* background-image: none; */
         background-color: var(--szmaragdowa-zielen);
         background-size: cover;
-        background-position: -450px center;
+        /* background-position: -450px center; */
+        background-position: -500px center;
         background-repeat: no-repeat;
         position: relative;
         min-height: 100vh;
@@ -606,5 +613,26 @@ iframe {
         border: 0;
         margin-top: 50px;
         margin-bottom: 10px;
+    }
+}
+
+/* Małe tablety */
+@media (max-width: 600px) {
+    .helloo-section {
+        background-position: -550px center;
+    }
+}
+
+/* Telefony */
+@media (max-width: 480px) {
+    .helloo-section {
+        background-position: -680px center;
+    }
+}
+
+/* Małe telefony */
+@media (max-width: 360px) {
+    .helloo-section {
+        background-position: -700px center;
     }
 }
