@@ -193,7 +193,7 @@ b, strong {
 
 .helloo-section {
     /* background-image: url('images/main-pic.jpg'); */
-    background-image: url('images/anna-piwońska-weterynarz-gekon-poznań-wielkopolska-gady.png');
+    background-image: url('images/anna-piwońska-weterynarz-poznań-gady.png');
     background-color: #333;
     background-size: cover;
     background-position: center 20%;
@@ -497,7 +497,7 @@ iframe {
 
     .helloo-section {
         /* background-image: url('images/main-pic.jpg'); */
-        background-image: url('images/anna-piwońska-weterynarz-gekon-poznań-wielkopolska-gady.png');
+        background-image: url('images/anna-piwońska-weterynarz-poznań-gady.png');
         /* background-color: #333; */
         /* background-image: none; */
         background-color: var(--szmaragdowa-zielen);
