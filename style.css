@@ -31,7 +31,6 @@ body {
 :root {
     /* --szmaragdowa-zielen: #27AE60; */
     --szmaragdowa-zielen: #0b8684;
-    /* --szmaragdowa-zielen-2: #0a6e6d; */
     --szmaragdowa-zielen-2: #075554;
     --ciemna-zielen: #229954;
     --bialy: #FFFFFF;
@@ -107,7 +106,6 @@ p {
 a {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    /* color: var(--szmaragdowa-zielen); */
     color: var(--szary-tekst);
     text-decoration: none;
     transition: all 0.3s ease;
@@ -145,7 +143,7 @@ a:active {
 }
 
 b, strong {
-    font-weight: 800; /* możesz zmienić na 800, jeśli 900 jest za mocne */
+    font-weight: 800;
 }
 
 /* Ukrycie wizualne nagłówków dla dostępności */
@@ -180,7 +178,7 @@ b, strong {
     color: var(--czarny-tekst);
     padding: 0;
     text-align: center;
-    margin-bottom: 0; /* Bez marginesu, bo będzie przylegać do paska odstępu */
+    margin-bottom: 0;
     border-radius: 0;
     box-shadow: none;
 }
@@ -194,22 +192,13 @@ b, strong {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 0; /* Bez marginesu, aby przylegał do kolumn */
+    margin-bottom: 0;
 }
-
-/* .hero-image-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-} */
 
 /* NOWE CLASSY I STYLE I WSZYSTKO NOWE */
 
 .helloo-section {
-    /* background-image: url('images/anna-piwońska-weterynarz-poznań-gady.png'); */
     background-image: url('images/weterynarz-gabinet-background.png');
-    /* background-color: #333; */
     background-color: var(--szmaragdowa-zielen);
     background-size: cover;
     background-position: center 20%;
@@ -305,14 +294,12 @@ b, strong {
     text-align: justify;
     max-width: 100%;
     max-height: 100%;
-    /* padding: 2%; */
 }
 
 .mruczek-personel-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* align-items: left; */
     margin-top: 15px;
     margin-bottom: 60px;
 }
@@ -399,15 +386,6 @@ b, strong {
     background-color: transparent;
 }
 
-/* .specialist-column .member img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    border: 2px dashed var(--jasny-szary); /* Tymczasowa ramka 
-} */
-
 /* Styl dla sekcji kontaktowej i lokalizacji */
 .contact-map-info {
     margin-top: 0;
@@ -451,7 +429,6 @@ footer {
     color: #888;
     padding: 10px;
     border-top: 1px solid var(--jasny-szary);
-
 }
 
 footer a {
@@ -472,14 +449,7 @@ iframe {
 }
 
 /* Responsywność */
-/* Duże tablety */
-@media (max-width: 1024px) {
-    .helloo-section {
-        /* background-position: center; */
-    }
-}
 
-/* Tablety */
 @media (max-width: 768px) {
 
     body {
@@ -495,10 +465,9 @@ iframe {
     /* Ukrycie paska odstępu na mobilnych, jeśli nie jest potrzebny */
     .top-spacing-bar {
         height: 0;
-        display: none; /* Całkowicie ukryj */
+        display: none;
     }
 
-    /* Margines od góry dla main w wersji mobilnej powinien być 0, jak wcześniej */
     main {
         margin-top: 0;
     }
@@ -512,12 +481,9 @@ iframe {
     }
 
     .helloo-section {
-        /* background-image: url('images/anna-piwońska-weterynarz-poznań-gady.png'); */
         background-image: url('images/weterynarz-gabinet-background.png');
-        /* background-image: none; */
         background-color: var(--szmaragdowa-zielen-2);
         background-size: cover;
-        /* background-position: -500px center; */
         background-repeat: no-repeat;
         position: relative;
         min-height: 100vh;
@@ -536,11 +502,9 @@ iframe {
 
     .text-overlay h1 {
         padding-left: 10px;
-        /* border: solid 2px red; */
     }
 
     .hello-text-background {
-        /* background-color: rgba(0, 0, 0, 0.4); */
         padding: 10px;
     }
 
@@ -634,34 +598,18 @@ iframe {
         margin-bottom: 10px;
     }
 }
-/* 
-@media (max-width: 600px) {
-    .helloo-section {
-        background-position: -550px center;
-    }
-}
-
-@media (max-width: 480px) {
-    .helloo-section {
-        background-position: -680px center;
-    }
-}
-
-@media (max-width: 360px) {
-    .helloo-section {
-        background-position: -700px center;
-    }
-}
-
-@media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
-    .helloo-section {
-        background-position: -450px center;
-    }
-}
 
 @media (orientation: landscape) {
     .helloo-section {
-        background-position: center;
-        min-height: 100dvh;
+        min-height: 100vh;
     }
-} */
+
+    .text-overlay {
+        width: 60vw;
+        min-width: 60vw;
+    }
+
+    .helloo-text.hello-text-background {
+        min-width: 40wv;
+    }
+}
